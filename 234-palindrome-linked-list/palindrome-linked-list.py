@@ -10,10 +10,7 @@ class Solution:
         while temp != None:
             x.append(temp.val)
             temp = temp.next
-        y=[]
-        for i in range(len(x)-1,-1,-1):
-            y.append(x[i])
-        if x==y:
+        if x == x[::-1]:
             return True
         else:
             return False
